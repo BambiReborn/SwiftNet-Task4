@@ -127,13 +127,30 @@ p{
     justify-items: center;
     align-items: center;
     flex-wrap: wrap;
-    
     padding: 5px;
     margin-top: 30px;
     animation: FadeIn 2s ease-in-out;
     transition: FadeIn 1s ease;   
 }
 
+/*card buttons*/
+.card-btn{
+    border: 1px solid var(--color-1);
+    border-radius: 5px;
+    padding: 5px;
+    background: white;
+    color: var(--color-1);
+    transition: FadeIn 1s ease;
+    animation: FadeIn 1s ease-in-out;
+}
+
+/*card buttons effect*/
+.card-btn:hover{
+    cursor: pointer;
+    background: var(--color-4);
+}
+
+/*card effects*/
 .card-1:hover{
     cursor: pointer;
     background-color: var(--color-4);
@@ -157,4 +174,16 @@ p{
 .card-6:hover{
     cursor: pointer;
     background-color: var(--color-4);
+}
+
+/*footer*/
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: white;
+    background: var(--color-3);
 }
