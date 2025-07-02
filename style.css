@@ -7,6 +7,7 @@
     --color-1: #3a33bd;
     --color-2: #ab772e;
     --color-3: #27ab51;
+    --color-4: #dce8de;
     --text-color: #313345;
 }
 /*header*/
@@ -21,6 +22,7 @@ header{
 #logo{
     color: white;
     text-shadow: 1px 2px 1px var(--text-color);
+    cursor: pointer;
 }
 .nav-links a{
     color: white;
@@ -57,8 +59,9 @@ header{
 /*intros*/
 h3{
     text-shadow: 1px 1px 1px var(--text-color);
+    font-family: lucida Grande;
     font-size: 3em;
-    margin-top: 20px;
+    margin-top: 150px;
     margin-bottom: 0px;
 }
 
@@ -77,6 +80,7 @@ p{
 
 .cta-btn{
     margin-top: 50px;
+    margin-bottom: 100px;
     border: solid 1px var(--color-3);
     border-radius: 10px;
     padding: 10px;
@@ -98,14 +102,59 @@ p{
 .father{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 50px;
     align-items: center;
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
-/*mother*/
+/*div mother*/
 .mother{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    color: var(--text-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/*cards*/
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
+    border: solid 1px var(--color-3);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px var(--color-3);
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    padding: 5px;
+    margin-top: 30px;
+    animation: FadeIn 2s ease-in-out;
+    transition: FadeIn 1s ease;   
+}
+
+.card-1:hover{
+    cursor: pointer;
+    background-color: var(--color-4);
+}
+.card-2:hover{
+    cursor: pointer;
+    background-color: var(--color-4);
+}
+.card-3:hover{
+    cursor: pointer;
+    background-color: var(--color-4);
+}
+.card-4:hover{
+    cursor: pointer;
+    background-color: var(--color-4);
+}
+.card-5:hover{
+    cursor: pointer;
+    background-color: var(--color-4);
+}
+.card-6:hover{
+    cursor: pointer;
+    background-color: var(--color-4);
 }
