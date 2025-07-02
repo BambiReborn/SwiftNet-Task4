@@ -1,0 +1,111 @@
+*{
+    margin: 5px;
+    
+}
+/*root*/
+:root{
+    --color-1: #3a33bd;
+    --color-2: #ab772e;
+    --color-3: #27ab51;
+    --text-color: #313345;
+}
+/*header*/
+header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+#logo{
+    color: white;
+    text-shadow: 1px 2px 1px var(--text-color);
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*hero section*/
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 60vh;
+    padding: 10px;
+    animation: SlideFromTop 2s ease-in-out;
+    background: linear-gradient(to top, white, var(--color-1));
+    color: white;
+}
+/*keyframes*/
+@keyframes SlideFromTop{
+    from{
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*intros*/
+h3{
+    text-shadow: 1px 1px 1px var(--text-color);
+    font-size: 3em;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.h1-101{
+    text-shadow: 1px 2px 1px var(--text-color);
+    font-size: 10em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p{
+    text-shadow: 1px 1px 1px black;
+    font-size: 1em;
+    margin-top: 0px;
+}
+
+.cta-btn{
+    margin-top: 50px;
+    border: solid 1px var(--color-3);
+    border-radius: 10px;
+    padding: 10px;
+    width: 20rem;
+    font-size: 1em;
+    color: white;
+    transition: background-color 1s ease;
+    animation: fade-in 4s ease-in-out;
+    background-color: var(--color-3)
+
+}
+
+.cta-btn:hover{
+    cursor: pointer;
+    background-color: #313345;
+}
+
+/*div father*/
+.father{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+/*mother*/
+.mother{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
