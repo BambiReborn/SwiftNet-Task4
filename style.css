@@ -236,5 +236,94 @@ h3{
 
 /*for tablets*/
 @media (max-width: 856px) {
-    
+    .hero{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;  
+    }
+    h3{
+        font-size: 2em;
+    }
+    .h1-101{
+        font-size: 7em;
+    }
+    .intro{
+        font-size: 0.7em;
+    }
+    .cta-btn{
+        width: 13rem;
+        font-size: 0.6em;
+    }
+    .father, .mother{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
+        justify-items: center;
+        align-items: center;
+        text-align: justify;
+        font-size: 0.5em;
+        width: 14em;
+        height: 30em;
+
+    }
+    .card-btn{
+        padding: 3px;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        font-size: 0.8em;
+    }
+}
+
+/*for mobile*/
+@media (max-width: 415px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.7em;
+        padding: 15px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    h3{
+        font-size: 1em;
+        margin-top: 0px;
+    }
+    .h1-101{
+        font-size: 4em;   
+    }
+    .intro{
+        font-size: 0.4em;
+    }
+    .cta-btn{
+        padding: 7px;
+        width: 9rem;
+        font-size: 0.4em;
+    }
+    .father, .mother{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        font-size: 0.7em;
+    }    
 }
