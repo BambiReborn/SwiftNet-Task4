@@ -38,6 +38,7 @@ header{
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 60vh;
+    /* margin-top: 10px; */
     padding: 10px;
     animation: SlideFromBottom 2s ease-in-out;
     background: linear-gradient(to top, white, var(--color-1));
@@ -61,7 +62,7 @@ h3{
     text-shadow: 1px 1px 1px var(--text-color);
     font-family: lucida Grande;
     font-size: 3em;
-    margin-top: 150px;
+    margin-top: 200px;
     margin-bottom: 0px;
 }
 
@@ -129,6 +130,7 @@ h3{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 40px;
     color: black;
     animation: SlideFromBottom 2s ease-in-out;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
@@ -326,4 +328,17 @@ h3{
         padding: 3px;
         font-size: 0.7em;
     }    
+}
+
+/*mobile 2*/
+@media (max-width: 425px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #logo{
+        font-size: 0.2em;
+    }
 }
