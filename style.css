@@ -1,6 +1,6 @@
-*{
+/* *{
     margin: 5px;  
-}
+} */
 /*root*/
 :root{
     --color-1: #3a33bd;
@@ -88,7 +88,7 @@ h3{
     color: white;
     transition: background-color 1s ease;
     animation: fade-in 4s ease-in-out;
-    background-color: var(--color-3)
+    background-color: var(--color-3);
 
 }
 
@@ -126,18 +126,6 @@ h3{
     }
 }
 
-/*div mother*/
-/* .mother{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    color: black;
-    margin: 50px 50px 70px 50px;
-    animation: SlideFromBottom 2s ease-in-out;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-} */
-
 /*keyframe for mother*/
 @keyframes SlideFromBottom{
     from{
@@ -158,7 +146,7 @@ h3{
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    font-size: 1em;;
+    font-size: 1em;
     width: 15em;
     height: auto;
     padding: 10px;
@@ -240,7 +228,7 @@ h3{
 
 /*MEDIA QUERIES*/
 
-/*for tablets*/
+/* for tablets */
 @media (max-width: 856px) {
     .hero{
       display: flex;
@@ -274,159 +262,9 @@ h3{
         font-size: 0.5em;
         width: 14em;
         height: 35em;
-
     }
     .card-btn{
         padding: 3px;
-    }
-    .copyright{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5px;
-        font-size: 0.8em;
-    }
-}
-
-/*for mobile*/
-@media (max-width: 425px){
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 0.7em;
-        padding: 15px;
-    }
-    .hero{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;   
-    }
-    h3{
-        font-size: 1em;
-        margin-top: 0px;
-    }
-    .h1-101{
-        font-size: 4em;   
-    }
-    .intro{
-        font-size: 0.5em;
-    }
-    .cta-btn{
-        padding: 7px;
-        width: 9rem;
-        font-size: 0.4em;
-    }
-    .father{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* flex-direction: column; */
-        max-width: 600px;
-        justify-content: center;
-        align-items: center;
-    }
-    .card-btn{
-        font-size: 13px;
-    }
-    .copyright{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 3px;
-        font-size: 0.7em;
-    }    
-}
-
-@media (max-width: 443px){
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 0.7em;
-        padding: 15px;
-    }
-    .hero{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;   
-    }
-    h3{
-        font-size: 1em;
-        margin-top: 0px;
-    }
-    .h1-101{
-        font-size: 0.5em;   
-    }
-    .intro{
-        font-size: 0.4em;
-    }
-    .cta-btn{
-        padding: 7px;
-        width: 9rem;
-        font-size: 0.4em;
-    }
-    .father, .mother{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .card-btn{
-        font-size: 13px;
-    }
-    .copyright{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 3px;
-        font-size: 0.7em;
-    }    
-}
-
-@media (max-width: 613px) {
-    .hero{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;  
-    }
-    h3{
-        font-size: 2em;
-    }
-    .h1-101{
-        font-size: 5em;
-    }
-    .intro{
-        font-size: 0.7em;
-    }
-    .cta-btn{
-        width: 13rem;
-        font-size: 0.6em;
-    }
-    .father{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
-        justify-items: center;
-        align-items: center;
-        /* text-align: justify; */
-        font-size: 0.5em;
-        width: 14em;
-        height: 35em;
-
-    }
-    .card-btn{
-        padding: 3px;
-        font-size: 1.6em;
     }
     .copyright{
         display: flex;
@@ -471,7 +309,6 @@ h3{
         font-size: 0.5em;
         width: 14em;
         height: 35em;
-
     }
     .card-btn{
         padding: 3px;
@@ -484,4 +321,153 @@ h3{
         padding: 5px;
         font-size: 0.8em;
     }
+}
+
+@media (max-width: 613px) {
+    .hero{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;  
+    }
+    h3{
+        font-size: 2em;
+    }
+    .h1-101{
+        font-size: 5em;
+    }
+    .intro{
+        font-size: 0.7em;
+    }
+    .cta-btn{
+        width: 13rem;
+        font-size: 0.6em;
+    }
+    .father{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
+        justify-items: center;
+        align-items: center;
+        /* text-align: justify; */
+        font-size: 0.5em;
+        width: 14em;
+        height: 35em;
+    }
+    .card-btn{
+        padding: 3px;
+        font-size: 1.6em;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        font-size: 0.8em;
+    }
+}
+
+/* @media (max-width: 443px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.7em;
+        padding: 15px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    h3{
+        font-size: 1em;
+        margin-top: 0px;
+    }
+    .h1-101{
+        font-size: 0.5em;   
+    }
+    .intro{
+        font-size: 0em;
+    }
+    .cta-btn{
+        padding: 7px;
+        width: 9rem;
+        font-size: 0.4em;
+    }
+    .father, .mother{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-btn{
+        font-size: 13px;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        font-size: 0.7em;
+    }    
+} */
+
+@media (max-width: 444px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.7em;
+        padding: 15px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    h3{
+        font-size: 1em;
+        margin-top: 0px;
+    }
+    .h1-101{
+        font-size: 4em;   
+    }
+    .intro{
+        font-size: 0.5em !important;
+        color: #27ab51 !important;
+        
+    }
+    .cta-btn{
+        padding: 7px;
+        width: 9rem;
+        font-size: 0.4em;
+    }
+    .father{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* flex-direction: column; */
+        max-width: 600px;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-btn{
+        font-size: 13px;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        font-size: 0.7em;
+    }    
 }
