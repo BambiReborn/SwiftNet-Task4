@@ -103,7 +103,10 @@ h3{
     grid-template-columns: repeat(3, 1fr);
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 50px;
+    /* margin: 50px; */
+    margin: 0 auto;
+    /* max-width: 600px; */
+    padding: 20px;
     align-items: center;
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -286,13 +289,6 @@ h3{
 }
 
 /*for mobile*/
-@media (max-width: 425px) {
-    .h1-101 {
-        font-size: 70px;
-    }
-}
-
-
 @media (max-width: 425px){
     header{
         display: flex;
@@ -316,17 +312,18 @@ h3{
         font-size: 4em;   
     }
     .intro{
-        font-size: 0.4em;
+        font-size: 0.5em;
     }
     .cta-btn{
         padding: 7px;
         width: 9rem;
         font-size: 0.4em;
     }
-    .father, .mother{
+    .father{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        flex-direction: column;
+        /* flex-direction: column; */
+        max-width: 600px;
         justify-content: center;
         align-items: center;
     }
@@ -411,10 +408,11 @@ h3{
         width: 13rem;
         font-size: 0.6em;
     }
-    .father, .mother{
-        display: flex;
+    .father{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
     }
     .card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
@@ -428,6 +426,56 @@ h3{
     }
     .card-btn{
         padding: 3px;
+        font-size: 1.6em;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 853px) {
+    .hero{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;  
+    }
+    h3{
+        font-size: 2em;
+    }
+    .h1-101{
+        font-size: 5em;
+    }
+    .intro{
+        font-size: 0.7em;
+    }
+    .cta-btn{
+        width: 13rem;
+        font-size: 0.6em;
+    }
+    .father{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
+        justify-items: center;
+        align-items: center;
+        /* text-align: justify; */
+        font-size: 0.5em;
+        width: 14em;
+        height: 35em;
+
+    }
+    .card-btn{
+        padding: 3px;
+        font-size: 1.6em;
     }
     .copyright{
         display: flex;
