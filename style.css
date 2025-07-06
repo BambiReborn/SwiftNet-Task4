@@ -430,3 +430,123 @@ h3{
         font-size: 0.7em;
     }    
 }
+
+
+@media (max-width: 396px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.7em;
+        padding: 15px;
+    }
+    #logo{
+        justify-self: self-start;
+        text-align: left;
+        margin-right: auto;
+
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;   
+    }
+    h3{
+        font-size: 1em;
+        margin-top: 0px;
+    }
+    .h1-101{
+        font-size: 4em;   
+    }
+    .intro{
+        font-size: 0.4em !important;
+        
+    }
+    .cta-btn{
+        padding: 7px;
+        width: 9rem;
+        font-size: 0.6em;
+    }
+    .father{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* flex-direction: column; */
+        max-width: 600px;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-btn{
+        font-size: 13px;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        font-size: 0.7em;
+    }    
+}
+
+@media (max-width: 331px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.7em;
+        padding: 15px;
+    }
+    #logo{
+        justify-self: self-start;
+        text-align: left;
+        margin-right: auto;
+
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;   
+    }
+    h3{
+        font-size: 1em;
+        margin-top: 0px;
+    }
+    .h1-101{
+        font-size: 3em;   
+    }
+    .intro{
+        font-size: 0.3em !important;
+        
+    }
+    .cta-btn{
+        padding: 7px;
+        width: 9rem;
+        font-size: 0.6em;
+    }
+    .father{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* flex-direction: column; */
+        max-width: 600px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
+        width: 12em;
+    }
+    .card-btn{
+        font-size: 13px;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        font-size: 0.7em;
+    }    
+}
